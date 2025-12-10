@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.A.Elektronik - Pusat Komponen Elektronik  </title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Variabel Warna */
+        :root {
+            --primary-color: #004a77; /* Biru Tua */
+            --secondary-color: #ff9900; /* Oranye */
+            --text-color: #333;
+            --light-bg: #f5f8fa;
+            --container-bg: white;
+        }
+
+        /* Styling Dasar */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            font-weight: 700;
+        }
+
+        header p {
+            margin-top: 5px;
+            font-size: 1.2em;
+            color: #c4d7e0;
+        }
+
+        /* Hero Banner */
+        .hero-banner {
+            width: 100%;
+            padding: 80px 0;
+            /* Placeholder untuk Gambar Toko */
+            background: linear-gradient(rgba(0, 74, 119, 0.85), rgba(0, 74, 119, 0.85)), url('url_gambar_internal_toko_anda.jpg'); 
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+        
+        .hero-banner h2 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+
+        /* Kontainer Utama */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 10px;
+        }
+        
+        /* Fitur / Keunggulan (Grid) */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .feature-item {
+            background-color: var(--container-bg);
+            padding: 25px;
+            border-bottom: 4px solid var(--secondary-color); 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .feature-item h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+
+        /* Tombol CTA */
+        .cta-section {
+            text-align: center;
+            background-color: var(--container-bg);
+            padding: 40px 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .cta-button:hover {
+            background-color: #e68a00;
+            transform: translateY(-2px);
+        }
+
+        /* Informasi Kontak */
+        .contact-info {
+            background-color: var(--container-bg);
+            padding: 25px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        
+        .contact-info strong {
+            color: var(--primary-color);
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+
+        /* Responsif */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+            .hero-banner {
+                padding: 60px 0;
+            }
+        }
+    </style>
+    </head>
+<body>
+
+    <header>
+        <h1>S.A.Elektronik</h1>
+        <p>Pusat Komponen Elektronik Terlengkap di Trenggalek</p>
+    </header>
+
+    <div class="hero-banner">
+        <h2>Kualitas Komponen Terjamin, Stok Terkini!</h2>
+        <p>Tentukan jarak Anda sekarang juga! Klik tombol di bawah untuk mendapatkan petunjuk arah *real-time* ke lokasi kami.</p>
+    </div>
+
+    <div class="container">
+        
+        <div class="cta-section">
+            <h2>Butuh Suku Cadang atau Komponen Langka?</h2>
+            <p>Langsung temukan toko kami dan dapatkan komponen yang Anda cari tanpa menunggu lama!</p>
+            <a href="https://maps.google.com/?cid=10879332521053535066&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" class="cta-button">Tentukan Jarak & Dapatkan Petunjuk Arah</a>
+        </div>
+        
+        <h2>Produk & Keunggulan Kami</h2>
+        <div class="features">
+            
+            <div class="feature-item">
+                <h3>Ketersediaan Komponen Lengkap</h3>
+                <p>Kami menyediakan mulai dari IC, Transistor, Resistor, Kapasitor, hingga komponen audio dan video khusus. Semua kebutuhan proyek Anda ada di sini.</p>
+            </div>
+
+            <div class="feature-item">
+                <h3>Suku Cadang Khusus Audio & Video</h3>
+                <p>Spesialis dalam suku cadang untuk perbaikan perangkat A/V, mulai dari *spare part* TV, Speaker, hingga Amplifier terbaru dan lama.</p>
+            </div>
+
+            <div class="feature-item">
+                <h3>Harga Grosir dan Eceran Terbaik</h3>
+                <p>Melayani pembelian dalam jumlah besar (grosir) maupun eceran dengan harga kompetitif. Cocok untuk teknisi profesional dan hobbyist.</p>
+            </div>
+
+        </div>
+
+        <section class="contact-info">
+            <h2>Informasi Kontak & Jam Buka</h2>
+            <p>
+                <strong>Alamat Toko:</strong> Jl. Sukarno Hatta No.143, Ngasinan, Kelutan, Kec. Trenggalek, Jawa Timur 66313<br>
+                <strong>Jam Operasional:</strong> Setiap Hari, 08.00–20.00<br>
+                <strong>Telepon (Resmi):</strong> <a href="tel:+62355796978">+62 355 796978</a>
+            </p>
+            
+        </section>
+
+    </div>
+
+    <footer>
+        <p>S.A.Elektro | Solusi Komponen Elektronik Trenggalek | © 2025</p>
+    </footer>
+
+</body>
+        </html>
+    
